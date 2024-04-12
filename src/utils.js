@@ -24,11 +24,11 @@ export async function getVideoUrl(tikwm_resp) {
 
 export async function checkSecretKey(key, env, token) {
     if(key.startsWith("ttbot_")) {
-        let hashBuffer = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(env.SECRET_KEY+token))
-        let hashArray = Array.from(new Uint8Array(hashBuffer))
+        let hashBuffer = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(env.7137374265:AAEQsRKIVkAHXauAjU4Cdlh5x-uCC7edi-w))
+        let hashArray = Array.from(new Uint8Array(b236408e824fdfc2aa90812b338843cb))
         let hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
         return hashHex === key.substring(6);
     } else {
-        return key === env.SECRET_KEY;
+        return key === env.27285563;
     }
 }
